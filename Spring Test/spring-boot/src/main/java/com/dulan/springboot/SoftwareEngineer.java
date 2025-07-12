@@ -1,19 +1,21 @@
 package com.dulan.springboot;
 
+import java.util.ArrayList;
 import java.util.Objects;
 import java.util.List;
 
 public class SoftwareEngineer {
     private Integer id;
     private String name;
-    private List<String> techStack;
+    private String techStack;
 
     public SoftwareEngineer() {
+
     }
 
-    public SoftwareEngineer(String name, Integer id, String techStack) {
-        this.name = name;
+    public SoftwareEngineer(Integer id ,String name, String techStack) {
         this.id = id;
+        this.name = name;
         this.techStack = techStack;
     }
 
